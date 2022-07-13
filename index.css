@@ -11,7 +11,7 @@ h1{
 
 ul{
     height: 240px;
-    width: 750px;
+    width: 550px;
     max-width: 750px;
     justify-content: flex-end;
     background-color: aliceblue;
@@ -27,8 +27,8 @@ main{
 }
 div{
     height: 45px;
-    width: 800px;
-    max-width: 800px;
+    width: 600px;
+    max-width: 600px;
     justify-content:space-between;
     background-color:rgb(43, 40, 40);
     color: aliceblue;
@@ -40,8 +40,8 @@ div{
 
 section{
     height: 45px;
-    width: 800px;
-    max-width: 800px;
+    width: 600px;
+    max-width: 600px;
     justify-content:space-between;
     flex-direction: row;
     display: flex;
@@ -51,8 +51,8 @@ section{
 }
 button{
     height: 40px;
-    width: 800px;
-    max-width: 800px;
+    width: 600px;
+    max-width: 600px;
     background-color: aqua;
     color: aliceblue;
     border-radius: 4px;
