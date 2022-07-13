@@ -42,6 +42,7 @@ tagh3.innerText = "Item"
 tagh3.classList.add("h33")
 let tagh30 = document.createElement("h3")
 tagh30.innerText = "Valor"
+tagh30.classList.add("espaço")
 div.appendChild(tagh3)
 div.appendChild(tagh30)
 main.appendChild(div)
@@ -55,12 +56,12 @@ let total = 0
 for(let i = 0; i< productsCart.length; i++){
 let li = document.createElement("li")
 let h3 = document.createElement("h3")
-let h5 = document.createElement("h5")
+let h5 = document.createElement("h4")
 
 
 h3.innerText = productsCart[i].name
 h5.innerText = productsCart[i].price
-
+h5.classList.add("espaço")
 
 li.appendChild (h3)
 li.appendChild (h5)
@@ -73,10 +74,11 @@ total+= productsCart[i].price
 
 let section = document.createElement("section")
 let h33 = document.createElement("h3")
-let h55 = document.createElement("h5")
+let h55 = document.createElement("h4")
 h33.innerText = "Valor"
 h33.classList.add("h33")
 h55.innerText = total
+h55.classList.add("espaço")
 
 section.appendChild(h33)
 section.appendChild(h55)
