@@ -51,7 +51,8 @@ body.appendChild (main)
 main.appendChild (ul)
  
 
-let total = 0
+
+
 
 for(let i = 0; i< productsCart.length; i++){
 let li = document.createElement("li")
@@ -67,8 +68,17 @@ li.appendChild (h3)
 li.appendChild (h5)
 ul.appendChild(li)
 
-total+= productsCart[i].price
 
+}
+
+
+
+
+function somar (array){
+    let total = 0
+for(let i = 0; i< array.length; i++ ){
+    total+= array[i].price
+} return total
 }
 
 
@@ -77,7 +87,7 @@ let h33 = document.createElement("h3")
 let h55 = document.createElement("h4")
 h33.innerText = "Valor"
 h33.classList.add("h33")
-h55.innerText = total
+h55.innerText = somar(productsCart)
 h55.classList.add("espaço")
 
 section.appendChild(h33)
@@ -87,3 +97,5 @@ main.appendChild(section)
 let button = document.createElement("button")
 button.innerText = "Finalizar Compra"
 main.appendChild(button)
+
+
